@@ -25,6 +25,7 @@ const (
 	OCR_IOCR_RECOGNISE_FINANCE_URL = "https://aip.baidubce.com/rest/2.0/solution/v1/iocr/recognise/finance"
 	OCR_VIN_URL                    = "https://aip.baidubce.com/rest/2.0/ocr/v1/vin_code"
 	OCR_CAR_TYPE_URL               = "https://aip.baidubce.com/rest/2.0/image-classify/v1/car"
+	OCR_VEHICLE_DETECT_URL         = "https://aip.baidubce.com/rest/2.0/image-classify/v1/vehicle_detect"
 	OCR_NUMBER_URL                 = "https://aip.baidubce.com/rest/2.0/ocr/v1/numbers"
 	OCR_BUSINESS_LICENSE_URL       = "https://aip.baidubce.com/rest/2.0/ocr/v1/business_license"
 )
@@ -150,6 +151,11 @@ func (oc *OCRClient) BusinessLicenseRecognize(image *vision.Image, params ...Req
 //车型识别识别
 func (oc *OCRClient) CarTypeRecognize(image *vision.Image, params ...RequestParam) (*OCRResponse, error) {
 	return oc.ocr(image, OCR_CAR_TYPE_URL, defaultCarTypeParams, params...)
+}
+
+//车辆检测和识别
+func (oc *OCRClient) VehicleDetectRecognize(image *vision.Image, params ...RequestParam) (*OCRResponse, error) {
+	return oc.ocr(image, OCR_VEHICLE_DETECT_URL, defaultCarTypeParams, params...)
 }
 
 //Vin码识别
