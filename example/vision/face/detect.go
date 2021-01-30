@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/chenqinghe/baidu-ai-go-sdk/vision"
-	"github.com/chenqinghe/baidu-ai-go-sdk/vision/face/v2"
+	"github.com/MengjieGuo/baidu-ai-go-sdk/vision"
+	"github.com/MengjieGuo/baidu-ai-go-sdk/vision/face/v2"
 )
 
 func DetectAndAnalysis() {

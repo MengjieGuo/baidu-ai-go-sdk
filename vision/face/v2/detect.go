@@ -1,7 +1,7 @@
 package v2
 
 import (
-	"github.com/chenqinghe/baidu-ai-go-sdk/vision"
+	"github.com/MengjieGuo/baidu-ai-go-sdk/vision"
 	"github.com/imroc/req"
 )
 
